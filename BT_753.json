@@ -1,0 +1,14 @@
+{
+  "GameCardId": "BT_753",
+  "ConfigComment": "Mana Burn :  Your opponent has 2 fewer Mana Crystals next turn.",
+
+  "InHandPlayPriority": {
+    "values": [
+      {
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "100"
+      }
+    ]
+  }
+}

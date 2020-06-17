@@ -1,0 +1,19 @@
+{
+  "GameCardId": "BT_714",
+  "ConfigComment": "Frozen Shadoweaver",
+
+  "InHandPlayPriority": {
+    "values": [
+      {
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "100"
+      },
+      {
+        "comment": "Kill Ships Cannon",
+        "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0 ",
+        "value": "100"
+      }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "GameCardId": "BT_429",
+  "ConfigComment": "Metamorphosis :  Swap your Hero Power to 'Deal 5 damage.' After 2 uses, swap it back.",
+
+  "InHandPlayPriority": {
+    "values": [
+      {
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "100"
+      }
+    ]
+  }
+}

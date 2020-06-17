@@ -1,0 +1,22 @@
+﻿{
+  "GameCardId": "Mulligan",
+  "ConfigComment": "This is the mulligan rules file.",
+
+  "Mulligan": {
+    "values": [
+      {
+        "comment": "Keep Battlefiend, Beaming Sidekick, Glacial Shard, Guardian Augmerchant, Mana Burn, Lowly Squire",
+        "mulligan": "BT_351, ULD_191, UNG_205, BT_722, BT_753, AT_082",
+        "condition": "*",
+        "value": "hold"
+      },
+
+      {
+        "comment": "Discard others",
+        "mulligan": "*",
+        "condition": "*",
+        "value": "discard"
+      }
+    ]
+  }
+}

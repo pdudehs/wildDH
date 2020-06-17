@@ -1,0 +1,19 @@
+{
+  "GameCardId": "HERO_10",
+  "ConfigComment": "Illidan Stormrage :  ",
+
+  "BeforePhysicalAttackBonus": {
+    "values": [
+      {
+        "comment": "Attack hero bonus",
+        "condition": "my_target(count(),hero=true) > 0 ",
+        "value": "10"
+       },
+       {
+         "comment": "Kill Ships Cannon",
+         "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0 ",
+         "value": "100"
+       }
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "GameCardId": "BT_430",
+  "ConfigComment": "Warglaives of Azzinoth :  After attacking a minion, your hero may attack again.",
+
+  "InHandPlayPriority": {
+    "values": [
+      {
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "100"
+      }
+    ]
+  }
+}

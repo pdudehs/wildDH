@@ -1,0 +1,24 @@
+{
+  "GameCardId": "GAME_005",
+  "ConfigComment": "The Coin settings.",
+
+  "BeforeEndTurnBonus": {
+    "values": [
+      {
+        "comment": "A coin in a full hand is almost worthless.",
+        "condition": "my_hand(count()) > 9",
+        "value": "-100"
+      }
+    ]
+  },
+
+  "BeforePlayCardBonus": {
+    "values": [
+      {
+        "comment": "If you don't have play for 2nd turn but you have for 3rd one, don't use coin at 1st turn to play double 1 drops",
+        "condition": "my_hand(count(), cost = 1) < 3 AND my_hand(count(), cost = 2) < 1 AND my_hand(count(), cost = 3) > 0 AND my_player(count(), max_mana = 1) > 0",
+        "value": "-999"
+      }
+    ]
+  }
+}

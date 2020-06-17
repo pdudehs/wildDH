@@ -1,0 +1,34 @@
+{
+  "GameCardId": "BT_495",
+  "ConfigComment": "Glaivebound Adept :  Battlecry: If your hero attacked this turn, deal 4 damage.",
+
+  "BeforePlayCardBonus": {
+    "values": [
+      {
+        "comment": "Give bonus if hero dealt damage.",
+        "condition": "my_hero(count(),hero_attacked_this_turn=true)>0",
+        "value": "10"
+      },
+      {
+        "comment": "Lose bonus if hero dealt no damage.",
+        "condition": "my_hero(count(),hero_attacked_this_turn=false)>0",
+        "value": "-5"
+      },
+      {
+        "comment": "Kill Ships Cannon",
+        "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0 ",
+        "value": "100"
+      }
+    ]
+  },
+
+  "InHandPlayPriority": {
+    "values": [
+      {
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "100"
+      }
+    ]
+  }
+}

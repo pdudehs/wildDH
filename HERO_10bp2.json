@@ -1,0 +1,23 @@
+{
+  "GameCardId": "HERO_10bp2",
+  "ConfigComment": "Demon's Bite :  [x]Hero Power +2 Attack this turn.",
+
+  "BeforeUseHeroPowerBonus": {
+    "values": [
+      {
+        "comment": "Gain value if Lowly Squire is on the board",
+        "condition": "my_minions(count(),cardid=AT_082,silenced=false)>0",
+        "value": "3"
+      }
+    ]
+  },
+  "BeforePhysicalAttackBonus": {
+    "values": [
+      {
+        "comment": "General bonus",
+        "condition": "*",
+        "value": "5"
+      }
+    ]
+  }
+}

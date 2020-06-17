@@ -1,0 +1,24 @@
+# V1
+# Class: Demonhunter
+# Format: Wild
+# Year of the Phoenix
+#
+# 2x (1) Battlefiend BT_351
+# 2x (1) Beaming Sidekick ULD_191
+# 2x (1) Consume Magic BT_490
+# 2x (1) Glacial Shard UNG_205
+# 2x (1) Guardian Augmerchant BT_722
+# 2x (1) Lowly Squire AT_082
+# 2x (1) Mana Burn BT_753
+# 2x (3) Blowtorch Saboteur DRG_403
+# 2x (3) Eye Beam BT_801
+# 1x (3) Frozen Shadoweaver BT_714
+# 2x (3) Hench-Clan Thug GIL_534
+# 2x (3) Satyr Overseer BT_352
+# 2x (5) Glaivebound Adept BT_495
+# 1x (5) Leeroy Jenkins EX1_116
+# 1x (5) Metamorphosis BT_492
+# 2x (5) Warglaives of Azzinoth BT_430
+# 1x (9) Baku the Mooneater GIL_826
+#
+#AAEBAea5AwSvBJ74AsO8A9a+Aw22E5fBAqbvAv2nA6K3A8S8A96+A8fGA9TIA/fIA/nIA/7IA/LJAwA=

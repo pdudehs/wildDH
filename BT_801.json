@@ -1,0 +1,34 @@
+{
+  "GameCardId": "BT_801",
+  "ConfigComment": "Eye Beam :  Lifesteal. Deal $3 damage to a minion. Outcast: This costs (1).",
+
+  "BeforePlayCardBonus": {
+    "values": [
+      {
+        "comment": "Gain value if Outcast",
+        "condition": "my_self(count(), outcast_activating=true) > 0 ",
+        "value": "2"
+      },
+      {
+        "comment": "Lose value if no Outcast",
+        "condition": "my_self(count(), outcast_activating=false) > 0 ",
+        "value": "-5"
+      },
+      {
+        "comment": "Kill Ships Cannon",
+        "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0 ",
+        "value": "1000"
+      }
+    ]
+  },
+
+  "InHandPlayPriority": {
+    "values": [
+      {
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "100"
+      }
+    ]
+  }
+}
