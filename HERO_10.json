@@ -1,19 +1,149 @@
 {
   "GameCardId": "HERO_10",
-  "ConfigComment": "Illidan Stormrage :  ",
+  "ConfigComment": "Illidan Stormrage : ",
 
   "BeforePhysicalAttackBonus": {
     "values": [
       {
         "comment": "Attack hero bonus",
-        "condition": "my_target(count(),hero=true) > 0 ",
+        "condition": "my_target(count(),hero=true) > 0",
         "value": "10"
-       },
-       {
-         "comment": "Kill Ships Cannon",
-         "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0 ",
-         "value": "100"
-       }
+      },
+      {
+        "comment": "Do not attack any minion that will cause me to die.",
+        "condition": "my_target(count(), minion=true) > 0 AND my_target(count(), attack) >= my_hero(count(), health)",
+        "value": "-1000"
+      },
+      {
+        "comment": "Kill Ship's Cannon",
+        "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0",
+        "value": "120"
+      },
+      {
+        "comment": "Kill Skybarge",
+        "condition": "my_target(count(),cardid=DRG_023,silenced=false) > 0",
+        "value": "110"
+      },
+      {
+        "comment": "Kill southsea captain",
+        "condition": "my_target(count(),cardid=NEW1_027,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill sharkfin fan",
+        "condition": "my_target(count(),cardid=TRL_507,silenced=false) > 0",
+        "value": "90"
+      },
+      {
+        "comment": "Kill brann bronzebeard",
+        "condition": "my_target(count(),cardid=LOE_077,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill kalecgos",
+        "condition": "my_target(count(),cardid=DAL_609,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill stargazer luna",
+        "condition": "my_target(count(),cardid=BOT_103,silenced=false) > 0",
+        "value": "110"
+      },
+      {
+        "comment": "Kill flamewaker",
+        "condition": "my_target(count(),cardid=BRM_002|WE1_023,silenced=false) > 0",
+        "value": "120"
+      },
+      {
+        "comment": "Kill sorcerer's apprentice",
+        "condition": "my_target(count(),cardid=EX1_608,silenced=false) > 0",
+        "value": "90"
+      },
+      {
+        "comment": "avoid violet spellwing",
+        "condition": "my_target(count(),cardid=DRG_107,silenced=false) > 0",
+        "value": "-100"
+      },
+      {
+        "comment": "Kill arcane flakmage",
+        "condition": "my_target(count(),cardid=ULD_240,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "avoid mad scientist",
+        "condition": "my_target(count(),cardid=FP1_004,silenced=false) > 0",
+        "value": "-100"
+      },
+      {
+        "comment": "Kill archmage vargoth",
+        "condition": "my_target(count(),cardid=DAL_558,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill northshire cleric",
+        "condition": "my_target(count(),cardid=CS2_235,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill acolyte of pain",
+        "condition": "my_target(count(),cardid=EX1_007,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill y'shaarj, rage unbound",
+        "condition": "my_target(count(),cardid=OG_042,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill warhorse trainer",
+        "condition": "my_target(count(),cardid=AT_075,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill steward of darkshire",
+        "condition": "my_target(count(),cardid=OG_310,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill silverware golem",
+        "condition": "my_target(count(),cardid=KAR_205,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill tiny knight of evil",
+        "condition": "my_target(count(),cardid=AT_021,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill kanrethad ebonlocke",
+        "condition": "my_target(count(),cardid=BT_309,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "Kill malchezaar's imp",
+        "condition": "my_target(count(),cardid=KAR_089,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "avoid expired merchant",
+        "condition": "my_target(count(),cardid=ULD_163,silenced=false) > 0",
+        "value": "-100"
+      },
+      {
+        "comment": "Kill mal'ganis",
+        "condition": "my_target(count(),cardid=GVG_021,silenced=false) > 0",
+        "value": "100"
+      },
+      {
+        "comment": "avoid carnivorous cube",
+        "condition": "my_target(count(),cardid=LOOT_161,silenced=false) > 0",
+        "value": "-100"
+      },
+      {
+        "comment": "avoid Possessed Lackey",
+        "condition": "my_target(count(),cardid=LOOT_306,silenced=false) > 0",
+        "value": "-100"
+      }
     ]
   }
 }

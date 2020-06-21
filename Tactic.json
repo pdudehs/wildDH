@@ -5,7 +5,7 @@
   "AttackOppHeroBonus": {
     "values": [
       {
-        "comment": "bonus to attack opp hero anytime ",
+        "comment": "bonus to attack opp hero anytime",
         "condition": "*",
         "value": "1"
       }

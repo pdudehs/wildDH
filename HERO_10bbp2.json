@@ -1,5 +1,5 @@
 {
-  "GameCardId": "HERO_10bp2",
+  "GameCardId": "HERO_10bbp2",
   "ConfigComment": "Demon's Bite :  [x]Hero Power +2 Attack this turn.",
   "BeforeUseHeroPowerBonus": {
     "values": [

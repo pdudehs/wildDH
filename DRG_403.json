@@ -1,19 +1,9 @@
 {
-  "GameCardId": "BT_352",
-  "ConfigComment": "Satyr Overseer :  After your hero attacks, summon a 2/2 Satyr.",
+  "GameCardId": "DRG_403",
+  "ConfigComment": "Blowtorch Saboteur",
 
   "BeforePhysicalAttackBonus": {
     "values": [
-      {
-        "comment": "Give bonus if hero dealt damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=true)>0",
-        "value": "100"
-      },
-      {
-        "comment": "Give negative bonus if hero has not dealt damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=false,frozen=false)>0 AND my_hero(count(), mana) >= 1",
-        "value": "-100"
-      },
       {
         "comment": "Kill Ship's Cannon",
         "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0",
@@ -143,31 +133,6 @@
         "comment": "avoid Possessed Lackey",
         "condition": "my_target(count(),cardid=LOOT_306,silenced=false) > 0",
         "value": "-100"
-      }
-    ]
-  },
-
-  "BeforePlayCardBonus": {
-    "values": [
-      {
-        "comment": "Give bonus if hero dealt no damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=false)>0",
-        "value": "5"
-      },
-      {
-        "comment": "Lose bonus if hero dealt no damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=true)>0",
-        "value": "-10"
-      }
-    ]
-  },
-
-  "InHandPlayPriority": {
-    "values": [
-      {
-        "comment": "General play priority setting",
-        "condition": "*",
-        "value": "25"
       }
     ]
   }

@@ -1,19 +1,32 @@
 {
-  "GameCardId": "BT_352",
-  "ConfigComment": "Satyr Overseer :  After your hero attacks, summon a 2/2 Satyr.",
+  "GameCardId": "UNG_205",
+  "ConfigComment": "Glacial Shard: Battlecry freeze target enemy.",
 
-  "BeforePhysicalAttackBonus": {
+  "InHandPlayPriority": {
     "values": [
       {
-        "comment": "Give bonus if hero dealt damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=true)>0",
-        "value": "100"
-      },
+        "comment": "General play priority setting",
+        "condition": "*",
+        "value": "0"
+      }
+    ]
+  },
+  "BeforeBattlecryTargetBonus": {
+    "values": [
       {
-        "comment": "Give negative bonus if hero has not dealt damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=false,frozen=false)>0 AND my_hero(count(), mana) >= 1",
+        "comment": "Do not freeze heros that are not a threat",
+        "condition": "my_target(count(), attack) == 0 AND my_target(count(),hero=true) > 0 AND opp_hero(count(), warrior|mage|warlock|paladin|hunter|shaman|priest=true) > 0",
         "value": "-100"
       },
+      {
+        "comment": "Freeze highest attack minion",
+        "condition": "my_target(count(),minion=true) > 0 AND my_target(count(), attack) == opp_minions(max(attack))",
+        "value": "100"
+      }
+    ]
+  },
+  "BeforePhysicalAttackBonus": {
+    "values": [
       {
         "comment": "Kill Ship's Cannon",
         "condition": "my_target(count(),cardid=GVG_075,silenced=false) > 0",
@@ -143,31 +156,6 @@
         "comment": "avoid Possessed Lackey",
         "condition": "my_target(count(),cardid=LOOT_306,silenced=false) > 0",
         "value": "-100"
-      }
-    ]
-  },
-
-  "BeforePlayCardBonus": {
-    "values": [
-      {
-        "comment": "Give bonus if hero dealt no damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=false)>0",
-        "value": "5"
-      },
-      {
-        "comment": "Lose bonus if hero dealt no damage.",
-        "condition": "my_hero(count(),hero_attacked_this_turn=true)>0",
-        "value": "-10"
-      }
-    ]
-  },
-
-  "InHandPlayPriority": {
-    "values": [
-      {
-        "comment": "General play priority setting",
-        "condition": "*",
-        "value": "25"
       }
     ]
   }
